@@ -1,6 +1,6 @@
 ## Case Hotmart
 
-Este projeto foi feito para o case técnico da hotmart, onde o objetivo foi criar microserviços que extraem textos de uma url, faz os processamentos necessários e manda-os para um banco de dados vetorial. Em seguida, usa-se esse banco de dados para fazer um RAG e gerar respostas mais precisas.
+Este projeto tem como objetivo criar microserviços que extraem textos de uma url, faz os processamentos necessários e manda-os para um banco de dados vetorial. Em seguida, usa-se esse banco de dados para fazer um RAG e gerar respostas mais precisas.
 
 ## Arquitetura do Projeto
 
