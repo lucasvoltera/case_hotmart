@@ -1,0 +1,6 @@
+POST http://localhost:8001/upload
+Content-Type: application/json
+
+{
+    "url": "https://hotmart.com/pt-br/blog/como-funciona-hotmart"
+}

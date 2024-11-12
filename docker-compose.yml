@@ -1,0 +1,38 @@
+version: '3.9'
+
+services:
+  qdrant:
+    image: qdrant/qdrant
+    ports:
+      - "6333:6333"
+    volumes:
+      - qdrant_storage:/qdrant/storage
+    networks:
+      - app_network
+
+  service_1:
+    build:
+      context: ./service_etl
+    ports:
+      - "8001:8000"
+    depends_on:
+      - qdrant
+    networks:
+      - app_network
+
+  service_2:
+    build:
+      context: ./service_rag
+    ports:
+      - "8002:8000"
+    depends_on:
+      - qdrant
+    networks:
+      - app_network
+
+volumes:
+  qdrant_storage:
+
+networks:
+  app_network:
+    driver: bridge

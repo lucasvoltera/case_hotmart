@@ -1,0 +1,26 @@
+
+POST http://localhost:8002/ask
+Content-Type: application/json
+
+{
+    "question": "Como funciona a Hotmart?"
+}
+
+###
+
+POST http://localhost:8002/ask
+Content-Type: application/json
+
+{
+    "question": "Quanto a hotmart cobra por venda?"
+}
+
+###
+
+POST http://localhost:8002/ask
+Content-Type: application/json
+
+{
+    "question": "Qual a missão da hotmart?"
+}
+

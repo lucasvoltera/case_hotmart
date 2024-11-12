@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+requests
+numpy
+qdrant-client
+beautifulsoup4
+lxml
+openai
+python-dotenv
